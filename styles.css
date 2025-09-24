@@ -54,6 +54,7 @@ body {
   align-items: center;
   padding: 60px 10%;
   min-height: 80vh;
+  gap: 40px;
 }
 
 .hero-text {
@@ -97,8 +98,8 @@ body {
 }
 
 .hero-image img {
-  width: 250px;
-  height: 250px;
+  width: 220px;   /* tamaño controlado */
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #007bff;
