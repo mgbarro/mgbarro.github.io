@@ -11,6 +11,18 @@ body {
   color: #333;
 }
 
+/* Ocultar todas las secciones excepto home */
+section {
+  display: none;
+}
+
+/* Mostrar la sección home */
+#home {
+  display: flex; /* o block, según tu diseño */
+  flex-direction: row; /* si tu .hero es flex */
+}
+
+
 /* Navbar */
 .navbar {
   display: flex;
