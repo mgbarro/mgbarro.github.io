@@ -14,7 +14,7 @@
       <h1 class="logo">Mauro García Barro</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -24,7 +24,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="section hero">
+  <section id="home" class="section hero reveal fade-in">
     <div class="container hero-content">
       <img src="images/profile.jpg" alt="Foto de perfil" class="profile-img">
       <h2>Hola, soy <span class="highlight">Mauro García Barro</span></h2>
@@ -34,7 +34,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section about">
+  <section id="about" class="section about reveal slide-left">
     <div class="container">
       <h2>Sobre mí</h2>
       <p>
@@ -47,7 +47,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section projects">
+  <section id="projects" class="section projects reveal slide-up ">
     <div class="container">
       <h2>Mis proyectos</h2>
 
@@ -72,7 +72,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section contact reveal slide-right">
     <div class="container">
       <h2>Contacto</h2>
       <p><strong>Teléfono:</strong> +34 698 100 103</p>
@@ -85,6 +85,9 @@
   <footer>
     <p>© 2025 Mauro García Barro - Portfolio</p>
   </footer>
+
+  <script src="scripts/sectionholder.js"></script>
+  <script src="scripts/sectionholder.js"></script>
 
 </body>
 </html>
