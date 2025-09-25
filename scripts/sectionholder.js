@@ -11,11 +11,11 @@
       // Ocultar todas las secciones
       sections.forEach(sec => sec.style.display = 'none');
       
-      // Mostrar la sección seleccionada
+      /* Mostrar la sección seleccionada
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
         targetSection.style.display = 'flex';
-      }
+      }*/
 
       // Actualizar clase "active" en la navbar
       navLinks.forEach(l => l.classList.remove('active'));
