@@ -7,83 +7,85 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Barra de navegación -->
+
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo"><a href="#home"></a><b>Mauro García Barro</b></div>
-    <nav>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container nav-container">
+      <h1 class="logo">Mauro García Barro</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Sección principal -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hola, soy <span>Mauro García Barro</span></h1>
-        <p>Ingeniero Informático | Sistemas | Data Science </p>
-        <a href="#about" class="btn">Sobre mí</a>
-      </div>
-      <div class="hero-image">
-        <img src="images/profile.jpg" alt="Foto de perfil">
-      </div>
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="container hero-content">
+      <img src="img/profile.jpg" alt="Foto de perfil" class="profile-img">
+      <h2>Hola, soy <span class="highlight">Mauro García Barro</span></h2>
+      <p>Ingeniero Informático | Sistemas | Data Science</p>
+      <a href="#about" class="btn">Sobre mí</a>
     </div>
   </section>
 
-
-  <!-- Sobre mí -->
-
+  <!-- About -->
   <section id="about" class="section about">
-    <h2>Sobre mí</h2>
-    <div class="about-content">
-      <div class="about-text">
-        <p> Soy ingeniero informático recién titulado en el Máster de Ingeniería Informática, con experiencia en Data Science, administración de entornos virtualizados, manejo de incidencias y sistemas en la nube</b>.
-          Persigo la <span>mejora continua</span> tanto a nivel técnico como interpersonal, y poder formar parte de proyectos que me permitan crecer y aprovechar al máximo dichos conocimientos.
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy ingeniero informático recién titulado en el Máster de Ingeniería Informática,
+        con experiencia en Data Science, administración de entornos virtualizados, manejo de incidencias y sistemas en la nube.
+        Persigo la mejora continua tanto a nivel técnico como interpersonal, y poder formar parte de proyectos que me permitan crecer
+        y aprovechar al máximo dichos conocimientos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Mis proyectos</h2>
+
+      <div class="card">
+        <h3>Uso de algoritmos de aprendizaje máquina para la detección de ciberacoso en redes sociales</h3>
+        <p>
+          Este desarrollo formó parte de la realización de un TFG (Trabajo de Fin de Grado) sobre el contraste de diversos modelos
+          de Machine Learning a la hora de predecir la tendencia de ciertos comentarios textuales de la red social Vine.
+        </p>
+        <a href="https://github.com/tuusuario/tu-repo" target="_blank">Ver en GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Análisis de necesidades de cómputo intensivo y despliegue de un sistema de colas en un CPD</h3>
+        <p>
+          TFM (Trabajo de Fin de Máster) desarrollado en colaboración con el CITIC acerca de una propuesta para la mejora del sistema
+          de peticiones de recursos de cómputo dentro de su infraestructura, a la vez que se lleva a cabo un análisis comparativo de
+          la plataforma de virtualización utilizada frente a otras alternativas del sector.
         </p>
       </div>
     </div>
   </section>
 
-
-
-  <!-- Proyectos -->
-
-  <section id="projects" class="section projects">
-    <h2>Mis proyectos</h2>
-    <div class="project">
-      <h3>Uso de algoritmos de aprendizaje máquina para la detección de ciberacoso en redes sociales</h3>
-      <p>
-        Este desarrollo formó parte de la realización de un TFG (Trabajo de Fin de Grado) sobre el contraste de diversos modelos de Machine Learning a la hora de predecir la tendencia de ciertos comentarios textuales de la red social Vine.
-      </p>
-      <a href="https://github.com/mgbarro/tfg-machinelearning">Ver en GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Análisis de necesidades de cómputo intensivo y despliegue de un sistema de colas en un CPD</h3>
-      <p>
-        TFM (Trabajo de Fin de Máster) desarrollado en colaboración con el CITIC acerca de una propuesta para la mejora del sistema de peticiones de recursos de cómputo dentro de su infraestructura, a la vez que se lleva a cabo un análisis comparativo de la plataforma de virtualización utilizada frente a otras alternativas del sector.
-      </p>
-    </div>
-
-
-    <!-- Contacto -->
-
-
+  <!-- Contact -->
   <section id="contact" class="section contact">
-    <h2>Contacto</h2>
-      <p>Teléfono: +34 698 100 103</p>
-      <p>Email: <a href="mailto:maurogarciabarro@gmail.com">tuemail@mail.com</a></p>
-      <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/mgbarro</a></p>
+    <div class="container">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> +34 698 100 103</p>
+      <p><strong>Email:</strong> <a href="mailto:tuemail@mail.com">tuemail@mail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/mgbarro" target="_blank">github.com/mgbarro</a></p>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Mauro García Barro - Portfolio</p>
   </footer>
 
-  <!--<script src=".\scripts\sectionholder.js"></script>-->
 </body>
 </html>
+
