@@ -52,14 +52,27 @@ body {
 }
 
 /* ---------------- Secciones genéricas ---------------- */
-.section {
-  padding: 100px 10%;
-  position: relative;
-}
 
 /* Para que no quede el contenido tapado por la barra fija */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
 .section:target {
   scroll-margin-top: 80px;
+}
+
+.section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 /* ---------------- Hero / Home ---------------- */
