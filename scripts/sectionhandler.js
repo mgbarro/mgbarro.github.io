@@ -1,0 +1,50 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const options = {
+    threshold: 0.2
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const sectionId = entry.target.id;
+
+      // Animación de la sección
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active");
+      }
+
+      // Actualizar navbar solo si la sección está visible
+      if (entry.isIntersecting && sectionId) {
+        navLinks.forEach(link => link.classList.remove("active"));
+        const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+      }
+    });
+  }, options);
+
+  reveals.forEach(reveal => observer.observe(reveal));
+
+  // Manejo del click en navbar (scroll suave + active)
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Actualizar active al hacer click
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+});
+
