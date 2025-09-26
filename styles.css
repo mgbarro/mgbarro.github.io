@@ -16,6 +16,9 @@ body {
   --nav-text: #111111;
   --foot-bg: #f5f5f5;
 
+  --hero-grad1: #f5f7fa;
+  --hero-grad2: #c3cfe2;
+
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
@@ -25,10 +28,13 @@ body {
 
 body.dark-mode{
   --bg-color: #111111;
-  --text-color: #f0f0f0;
+  --text-color: #ffffff;
   --nav-bg: #222222b7;
   --nav-text: #f0f0f0;
-  --foot-bg: #333333de;
+  --foot-bg: #473636de;
+
+  --hero-grad1: #0d0d0e;
+  --hero-grad2: #3a4e6e;
 }
 
 /* Navbar */
@@ -102,6 +108,18 @@ body.dark-mode{
   justify-content: center;
 }
 
+.section .about {
+  background: var(--bg-color)
+}
+
+.section .projects {
+  background: linear-gradient(135deg, #8e9ecf, #8173d4)
+}
+
+.section .contact {
+  background: #0056b3;
+}
+
 /*.section:nth-child(even) {
   background: var(--bg-color);
 }*/
@@ -114,7 +132,7 @@ body.dark-mode{
 /* Hero */
 .hero {
   text-align: center;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(135deg, var(--hero-grad1), var(--hero-grad2));
 }
 
 .hero-content h2 {
