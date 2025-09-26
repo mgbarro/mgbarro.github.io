@@ -102,9 +102,9 @@ body.dark-mode{
   justify-content: center;
 }
 
-.section:nth-child(even) {
+/*.section:nth-child(even) {
   background: var(--bg-color);
-}
+}*/
 
 .container {
   max-width: 900px;
@@ -152,7 +152,7 @@ body.dark-mode{
 
 /* Projects */
 .projects .card {
-  background: var(--bg-color);
+  background: var(--nav-bg);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -160,9 +160,14 @@ body.dark-mode{
 }
 
 .projects a {
-  color: var(--bg-color);
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
   background: #007bff;
+  color: var(--bg-color);
+  border-radius: 25px;
   text-decoration: none;
+  transition: background 0.3s;
 }
 
 .projects a:hover {
