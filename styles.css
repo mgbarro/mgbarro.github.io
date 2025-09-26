@@ -31,7 +31,7 @@ body.dark-mode{
   --text-color: #ffffff;
   --nav-bg: #222222b7;
   --nav-text: #f0f0f0;
-  --foot-bg: #473636de;
+  --foot-bg: #241e1eee;
 
   --hero-grad1: #0d0d0e;
   --hero-grad2: #3a4e6e;
@@ -108,18 +108,6 @@ body.dark-mode{
   justify-content: center;
 }
 
-.section .about {
-  background: var(--bg-color)
-}
-
-.section .projects {
-  background: linear-gradient(135deg, #8e9ecf, #8173d4)
-}
-
-.section .contact {
-  background: #0056b3;
-}
-
 /*.section:nth-child(even) {
   background: var(--bg-color);
 }*/
@@ -168,7 +156,19 @@ body.dark-mode{
   background: #0056b3;
 }
 
+
+/* About */
+
+#about {
+  background: var(--bg-color);
+}
+
 /* Projects */
+
+.projects {
+  background: linear-gradient(135deg, #8e9ecf, #8173d4);
+}
+
 .projects .card {
   background: var(--nav-bg);
   padding: 20px;
@@ -190,6 +190,13 @@ body.dark-mode{
 
 .projects a:hover {
   text-decoration: underline;
+}
+
+
+/* Contact */
+
+#contact {
+  background: linear-gradient(135deg, #0640f0, #080229);
 }
 
 /* Footer */
