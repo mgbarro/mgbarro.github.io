@@ -199,19 +199,23 @@ body.dark-mode{
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   padding: 15px;
-  max-width: 350px; /* límite de ancho */
+  max-width: 500px; /* límite de ancho */
+  overflow: hidden;
   margin: 0 auto;   /* centra la card si hay espacio */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects.card img {
-  width: 300px;
-  height: 200px;
+  max-width: 100%;
   border-radius: 8px;
   display: block;
 }
 .projects.card h3 { margin: 0.8rem 0; }
-.projects.card p { margin: 0 1rem 1rem; }
+.projects.card p { 
+  margin: 0 1rem 1rem;
+  word-wrap: break-word;   /* 👈 corta palabras largas */
+  overflow-wrap: break-word;
+}
 
 .projects .card:hover {
   transform: scale(1.02);
