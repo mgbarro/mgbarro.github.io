@@ -259,7 +259,7 @@ body.dark-mode{
 }
 
 #contact.container {
-  background: var(--nav-bg);
+  background-color: var(--nav-bg);
 }
 
 .contact-icons {
@@ -279,6 +279,7 @@ body.dark-mode{
 .social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 75px;
   height: 75px;
   border-radius: 50%;
