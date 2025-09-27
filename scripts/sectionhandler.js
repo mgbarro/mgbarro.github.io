@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
   const reveals = document.querySelectorAll(".reveal");
   const navLinks = document.querySelectorAll('.nav-links a');
 

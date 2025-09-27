@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio - Mauro García Barro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -52,22 +53,31 @@
     <div class="container">
       <h2>Mis proyectos</h2>
 
-      <div class="card">
-        <h3>Uso de algoritmos de aprendizaje máquina para la detección de ciberacoso en redes sociales</h3>
-        <p>
-          Este desarrollo formó parte de la realización de un <span class="highlight">TFG (Trabajo de Fin de Grado)</span> sobre el contraste de diversos modelos
-          de Machine Learning a la hora de predecir la tendencia de ciertos comentarios textuales de la red social Vine.
-        </p>
-        <a href="https://github.com/mgbarro/tfg-machinelearning" target="_blank">Ver en GitHub</a>
-      </div>
+      <div class="projects-grid">
+        <div class="card reveal zoom-in">
+          <img src="images/TFGProjPortada.png" alt="TFG">
+          <h3>Uso de algoritmos de aprendizaje máquina para la detección de ciberacoso en redes sociales</h3>
+          <p>
+            Desarrollo de un <span class="highlight">TFG (Trabajo de Fin de Grado)</span> sobre el contraste de varios modelos
+            de Machine Learning a la hora de predecir el comportamiento de diferentes comentarios en la red social Vine.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/mgbarro/tfg-machinelearning" target="_blank">Ver Código <i class="fa-solid fa-laptop-code"></i></a>
+          </div>
+        </div>
 
-      <div class="card">
-        <h3>Análisis de necesidades de cómputo intensivo y despliegue de un sistema de colas en un CPD</h3>
-        <p>
-          <span class="highlight">TFM (Trabajo de Fin de Máster)</span> desarrollado en colaboración con el CITIC acerca de una propuesta para la mejora del sistema
-          de peticiones de recursos de cómputo dentro de su infraestructura, a la vez que se lleva a cabo un análisis comparativo de
-          la plataforma de virtualización utilizada frente a otras alternativas del sector.
-        </p>
+        <div class="card reveal zoom-in">
+          <img src="images/TFMProjPortada.png" alt="TFM">
+          <h3>Análisis de necesidades de cómputo intensivo y despliegue de un sistema de colas en un CPD</h3>
+          <p>
+            <span class="highlight">TFM (Trabajo de Fin de Máster)</span> elaborado en colaboración con el CITIC como propuesta para la mejora del sistema
+            de peticiones de recursos de cómputo dentro de su infraestructura, a la vez que se lleva a cabo un análisis comparativo de
+            la plataforma de virtualización utilizada frente a otras alternativas del sector.
+          </p>
+          <div class="card-links">
+            <a href="" target="_blank">Ver Código <i class="fa-solid fa-laptop-code"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -76,9 +86,16 @@
   <section id="contact" class="section contact reveal slide-right">
     <div class="container">
       <h2>Contacto</h2>
-      <p><strong>Teléfono:</strong> +34 698 100 103</p>
-      <p><strong>Email:</strong> <a href="mailto:maurogarciabarro@gmail.com">maurogarciabarro@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/mgbarro" target="_blank">github.com/mgbarro</a></p>
+      <p><strong><i class="contact-icons fa fa-phone" style="font-size:36px"></i> +34 698 100 103</strong></p>
+      <p><strong><i class="contact-icons fa-solid fa-envelope" style="font-size:36px"></i> maurogarciabarro@gmail.com</strong></p>
+      <p><strong><i class="contact-icons fa-solid fa-location-dot"></i> A Coruña, España</strong></p>
+
+      <div class="contact-grid">
+
+        <a href="mailto:maurogarciabarro@gmail.com" class="social-icons fa-solid fa-envelope"></a>
+        <a href="https://github.com/mgbarro" class="social-icons fa-brands fa-github"></a>
+        <a href="" class="social-icons fa-brands fa-linkedin"></a>
+      </div>
     </div>
   </section>
 
