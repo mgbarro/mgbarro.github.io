@@ -52,9 +52,9 @@ body.dark-mode{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
+  cursor: pointer;
   background-color: transparent;
   color: var(--text-color);
-  opacity: 0;
   border-radius: 25px;
   text-decoration: none;
   transition: background 0.3s;
