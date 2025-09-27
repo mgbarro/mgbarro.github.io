@@ -48,20 +48,20 @@ body.dark-mode{
 
 /* Navbar */
 
-.toggle-theme{
+#toggle-theme{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #007bff;
-  color: var(--bg-color);
+  background-color: transparent;
+  color: var(--text-color);
   opacity: 0;
   border-radius: 25px;
   text-decoration: none;
   transition: background 0.3s;
 }
 
-.toggle-theme:hover{
-  background: var(--text-color);
+#toggle-theme:hover{
+  background: var(--bg-color);
 }
 
 .navbar {
@@ -201,7 +201,7 @@ body.dark-mode{
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   padding: 15px;
-  max-width: 750px; /* límite de ancho */
+  max-width: 1000px; /* límite de ancho */
   max-height: auto;
   overflow: hidden;
   margin: 0 auto;   /* centra la card si hay espacio */
@@ -209,8 +209,8 @@ body.dark-mode{
 }
 
 .projects .card img {
-  max-width: 80%;
-  height: auto;
+  max-width: 100%;
+  max-height: 300px;
   border-radius: 8px;
   display: block;
 }
@@ -227,6 +227,7 @@ body.dark-mode{
 }
 
 .card-links {
+  margin-top: auto;
   display: flex;
   justify-content: space-between; /* equidistantes */
   padding: 1rem;
@@ -269,7 +270,15 @@ body.dark-mode{
   color: #4ec7a3;
 }
 
-
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
 
 .social-icons a {
   border-radius: 100%;
