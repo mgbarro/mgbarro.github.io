@@ -272,16 +272,16 @@ body.dark-mode{
   padding: 20px;
 }
 
-.social-icons a {
+.social-icons {
   display: inline-block;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 4px solid #ffffff;
   color: #111;
   background-color: #ffffff;
   object-fit: cover;
 }
 
-.social-icons a:hover {
+.social-icons:hover {
   color:#fff;
 }
 
@@ -294,7 +294,7 @@ body.dark-mode{
 }
 
 .social-icons.fa-linkedin:hover {
-  border-color: #73a0cf;
+  background-color: #73a0cf;
 }
 
 
