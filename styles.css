@@ -50,7 +50,6 @@ body.dark-mode{
 
 #toggle-theme{
   display: block;
-  margin: 0 auto;
   padding: 10px 20px;
   cursor: pointer;
   background-color: transparent;
@@ -78,7 +77,7 @@ body.dark-mode{
 .nav-container {
   max-width: 1100px;
   /*margin: auto;*/
-  gap: 20px;
+  gap: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
