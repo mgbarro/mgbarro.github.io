@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add('dark-mode');
   }
 
+  const hamburger = document.querySelector(".hamburger");
+  const navLinksMenu = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinksMenu.classList.toggle("active");
+  });
+
   const reveals = document.querySelectorAll(".reveal");
   const navLinks = document.querySelectorAll('.nav-links a');
 

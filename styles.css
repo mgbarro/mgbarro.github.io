@@ -66,7 +66,7 @@ body.dark-mode{
 .navbar {
   background: var(--nav-bg);
   border-bottom: 1px solid #eee;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -108,6 +108,24 @@ body.dark-mode{
   color: #007bff;
 }
 
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
 /* Secciones */
 .section {
   min-height: 100vh;
@@ -138,7 +156,7 @@ body.dark-mode{
 }
 
 .highlight {
-  color: var(--btn-bg);
+  color: #007bff;
 }
 
 .profile-img {
@@ -408,9 +426,25 @@ footer {
   }
 
   .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
     flex-direction: column;
-    gap: 10px;
-    text-align: center;
+    gap: 1rem;
+    width: 200px;
+    padding: 1rem;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: none; /* oculto por defecto */
+  }
+
+  .nav-links.active {
+    display: flex; /* se muestra cuando el menú se activa */
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .hero-content h2 {
