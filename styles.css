@@ -202,7 +202,7 @@ body.dark-mode{
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
+  gap: 5rem;
   justify-items: center;
 }
 
@@ -233,6 +233,7 @@ body.dark-mode{
 }
 
 .skill-card span {
+  margin-top: auto;
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
@@ -246,7 +247,7 @@ body.dark-mode{
 
 /* Sección timeline */
 #experience {
-  background: linear-gradient(45deg, #312c38, #ffffff);
+  background: linear-gradient(45deg,#ffffff,#120d2e);
   padding: 60px 20px;
   text-align: center;
 }
@@ -394,6 +395,10 @@ body.dark-mode{
   overflow: hidden;
   margin: 0 auto;   /* centra la card si hay espacio */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .card:hover {
+  transform: translateY(-5px);
 }
 
 .projects .card img {
