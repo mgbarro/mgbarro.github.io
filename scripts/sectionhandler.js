@@ -17,18 +17,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // TimeLine Animation
-  const timeItems = document.querySelectorAll(".timeline-content");
+  const events = document.querySelectorAll(".timeline-event");
 
-  const timelineObserver = new IntersectionObserver((entries) => {
+  const eventOptions = {
+    threshold: 0.2
+  };
+
+  const eventObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      } else {
-        entry.target.classList.remove("show");
+      if(entry.isIntersecting){
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target); // evita reanimar
       }
     });
-  }, { threshold: 0.2 });
-  timeItems.forEach(item => timelineObserver.observe(item));
+  }, eventOptions);
+
+  events.forEach(event => {
+    eventObserver.observe(event);
+  });
 
 
   // Navbar Header
