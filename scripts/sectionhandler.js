@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // Dark Mode
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     document.body.classList.add('dark-mode');
   }
 
+
+  // Hamburger Menu
   const hamburger = document.querySelector(".hamburger");
   const navLinksMenu = document.querySelector(".nav-links");
 
@@ -12,6 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinksMenu.classList.toggle("active");
   });
 
+
+  // TimeLine Animation
+  const timeItems = document.querySelectorAll(".timeline-content");
+
+  const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  }, { threshold: 0.2 });
+  timeItems.forEach(item => timelineObserver.observe(item));
+
+
+  // Navbar Header
   const reveals = document.querySelectorAll(".reveal");
   const navLinks = document.querySelectorAll('.nav-links a');
 

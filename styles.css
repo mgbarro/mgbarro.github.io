@@ -190,6 +190,85 @@ body.dark-mode{
   background: var(--bg-color);
 }
 
+/* Sección timeline */
+#timeline {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#timeline h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Contenedor principal */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+/* Línea base */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #ddd;
+  z-index: 1;
+}
+
+
+.timeline-item {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.timeline-content {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  z-index: 3;
+  border: 3px solid white;
+}
+
 /* Projects */
 
 .projects-grid {
@@ -428,7 +507,7 @@ footer {
 
   .nav-links {
     position: absolute;
-    top: 2rem;
+    top: 50px;
     left: -250px;
     background: var(--bg-color);
     flex-direction: column;
@@ -451,6 +530,10 @@ footer {
     display: flex;
   }
 
+  .hamburger.span {
+    color: var(--text-color);
+  }
+
   .hero-content h2 {
     font-size: 1.5rem;
   }
@@ -458,6 +541,14 @@ footer {
   .profile-img {
     width: 120px;
     height: 120px;
+  }
+
+  .timeline-container {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  .timeline-item {
+    flex: 0 0 auto;
   }
 
   .projects-grid {
