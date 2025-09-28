@@ -42,8 +42,8 @@ body.dark-mode{
   --hero-grad1: #0d0d0e;
   --hero-grad2: #3a4e6e;
 
-  --btn-bg: #043972;
-  --btn-bg-hover: #007bff;
+  /*--btn-bg: #043972;
+  --btn-bg-hover: #007bff;*/
 }
 
 /* Navbar */
@@ -428,7 +428,7 @@ footer {
 
   .nav-links {
     position: absolute;
-    top: 0;
+    top: 2rem;
     left: -250px;
     background: var(--bg-color);
     flex-direction: column;
@@ -438,7 +438,7 @@ footer {
     border-left: 1px solid #eee;
     border-bottom: 1px solid #eee;
     display: none; /* oculto por defecto */
-    transition: left 0.3s ease;
+    transition: left 0.8s ease;
   }
 
   .nav-links.active {
@@ -447,7 +447,7 @@ footer {
   }
 
   .hamburger {
-    color: var(--nav-text);
+    color: var(--text-color);
     display: flex;
   }
 
