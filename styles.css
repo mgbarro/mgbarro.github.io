@@ -203,6 +203,7 @@ body.dark-mode{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 5rem;
+  justify-content: space-between;
   justify-items: center;
 }
 
