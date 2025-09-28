@@ -223,7 +223,7 @@ body.dark-mode{
 }
 
 .skill-card i {
-  max-width: 50px;
+  width: 50px;
   margin-bottom: 10px;
   color: white;
 }
