@@ -194,6 +194,10 @@ body.dark-mode{
   color: var(--text-color);
 }
 
+#about h2 {
+  margin-top: 20px;
+}
+
 .skills-grid {
   margin-top: 40px;
   display: grid;
@@ -203,11 +207,11 @@ body.dark-mode{
 }
 
 .skill-card {
-  background: var(--btn-bg-hover);
+  background: var(--btn-bg);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
-  width: 120px;
+  width: 200px;
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -231,6 +235,7 @@ body.dark-mode{
 .skill-card span {
   font-size: 0.9rem;
   font-weight: 500;
+  color: white;
 }
 
 .skill-card:hover {
