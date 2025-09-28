@@ -190,9 +190,58 @@ body.dark-mode{
   background: var(--bg-color);
 }
 
+#about i.fa-lightbulb{
+  color: var(--text-color);
+}
+
+.skills-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: var(--btn-bg-hover);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card i {
+  max-width: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.skill-card img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
 /* Sección timeline */
 #experience {
-  background: #f9f9f9;
+  background: linear-gradient(45deg, #312c38, #ffffff);
   padding: 60px 20px;
   text-align: center;
 }
