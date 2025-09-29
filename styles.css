@@ -469,7 +469,7 @@ body.dark-mode{
 #contact.container {
   background:#63676b7e;
   background-color: var(--nav-bg);
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
