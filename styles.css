@@ -460,14 +460,20 @@ body.dark-mode{
 
 #contact {
   background: linear-gradient(180deg, #ffffff80, #023a7aa6);
+  display:flex;
+  flex-direction: column;
 }
 
 #contact.container {
-  display:flex;
-  flex-direction: column;
   background:#63676b7e;
   background-color: var(--nav-bg);
 }
+
+a[href^="tel"] {
+  text-decoration: none;  /* Quita el subrayado */
+  color: inherit;         /* Hereda el color del elemento padre */
+}
+
 
 #contact a.contact-icons {
   display: inline-block;
