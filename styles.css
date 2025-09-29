@@ -138,8 +138,12 @@ body.dark-mode{
   justify-content: center;
 }
 
-.section i{
+.section.hero i{
   color: var(--bg-color);
+}
+
+.section h1 i {
+  color: var(--text-color);
 }
 
 /*.section:nth-child(even) {
@@ -387,7 +391,7 @@ body.dark-mode{
 }
 
 .projects {
-  background: linear-gradient(135deg, #5f07d3, #231380);
+  background: linear-gradient(135deg, #5f07d39d, #2313809a);
 }
 
 .projects .card {
@@ -459,6 +463,8 @@ body.dark-mode{
 }
 
 #contact.container {
+  display:flex;
+  flex-direction: column;
   background:#63676b7e;
   background-color: var(--nav-bg);
 }
@@ -476,6 +482,10 @@ body.dark-mode{
 
 #contact a.contact-icons:hover {
   background: #b4b0b065;
+}
+
+.contact-icons {
+  color: #111;
 }
 
 .contact-grid {
