@@ -25,6 +25,8 @@ body {
   --btn-bg: #007bff;
   --btn-bg-hover: #043972;
 
+  overflow-x: hidden;
+
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
@@ -121,14 +123,15 @@ body.dark-mode{
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: var(--text-color);
   border-radius: 2px;
   transition: 0.3s ease;
 }
 
 /* Secciones */
 .section {
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   padding: 100px 20px;
   display: flex;
   align-items: center;
@@ -152,7 +155,7 @@ body.dark-mode{
 
 .hero-content h2 {
   margin: 20px 0;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 .highlight {
@@ -160,8 +163,8 @@ body.dark-mode{
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 4px solid #007bff;
   object-fit: cover;
@@ -223,7 +226,7 @@ body.dark-mode{
 }
 
 .skill-card i {
-  width: 50px;
+  font-size: 50px;
   margin-bottom: 10px;
   color: white;
 }
@@ -632,12 +635,12 @@ footer {
   }
 
   .hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 175px;
+    height: 175px;
   }
 
   .timeline-horizontal {
@@ -684,12 +687,12 @@ footer {
   }
 
   .hero-content h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .btn {
@@ -699,6 +702,37 @@ footer {
 
   .projects-grid {
     gap: 1.5rem;
+  }
+
+  .timeline-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 30px;
+    overflow-x: visible; /* quitar scroll horizontal */
+  }
+
+  .timeline-horizontal::before {
+    top: 0;
+    left: 25px; /* la línea queda alineada con los iconos */
+    width: 4px;
+    height: 100%;
+  }
+
+  .timeline-event {
+    min-width: unset;
+    width: 100%;
+    text-align: left;
+  }
+
+  .timeline-icon {
+    margin: 0;
+    position: relative;
+    left: -25px; /* el icono queda encima de la línea */
+  }
+
+  .timeline-content {
+    margin-left: 50px; /* el contenido se desplaza a la derecha de la línea */
   }
 
   footer {
