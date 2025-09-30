@@ -545,6 +545,7 @@ a[href^="tel"] {
   background-color: #ffffff;
   text-decoration: none;
   margin: 0 auto;
+  font-size: 1.1rem;
 }
 
 .social-icons:hover {
