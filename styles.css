@@ -22,6 +22,8 @@ body {
   --hero-grad1: #f5f7fa;
   --hero-grad2: #c3cfe2;
 
+  --contact-bg: #e3f2fd;
+
   --btn-bg: #007bff;
   --btn-bg-hover: #043972;
 
@@ -43,6 +45,8 @@ body.dark-mode{
 
   --hero-grad1: #0d0d0e;
   --hero-grad2: #3a4e6e;
+
+  --contact-bg: #177bc2;
 
   /*--btn-bg: #043972;
   --btn-bg-hover: #007bff;*/
@@ -459,19 +463,30 @@ body.dark-mode{
 /* Contact */
 
 #contact {
-  background: linear-gradient(180deg, #ffffff80, #023a7aa6);
+  background: var(--contact-bg);
+  color: var(--text-color)
 }
 
-#contact h1 {
-  color: #111;
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-#contact.container {
-  background:#63676b7e;
-  background-color: var(--nav-bg);
+.contact-info {
+  background: #b9b7b79c;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  color: #1565c0;
 }
 
 a[href^="tel"] {
@@ -527,15 +542,15 @@ a[href^="tel"] {
   color:#fff;
 }
 
-.social-icons.fa-envelope:hover {
+.social-icons i.fa-envelope:hover {
   background-color: #c22222;
 }
 
-.social-icons.fa-github:hover {
+.social-icons i.fa-github:hover {
   background-color: #111;
 }
 
-.social-icons.fa-linkedin:hover {
+.social-icons i.fa-linkedin:hover {
   background-color: #56b3d8;
 }
 
