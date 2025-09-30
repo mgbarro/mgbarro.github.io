@@ -468,7 +468,7 @@ body.dark-mode{
 }
 
 #contact h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
@@ -478,14 +478,23 @@ body.dark-mode{
   flex-direction: column;
   gap: 15px;
   margin-bottom: 40px;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 12px;
-  font-size: 1.1rem;
+  font-size: 2rem;
+  color: #1565c0;
+}
+
+.contact-item a {
+  text-decoration: none;
   color: #1565c0;
 }
 
@@ -542,15 +551,15 @@ a[href^="tel"] {
   color:#fff;
 }
 
-.social-icons i.fa-envelope:hover {
+.social-icons.fa-envelope:hover {
   background-color: #c22222;
 }
 
-.social-icons i.fa-github:hover {
+.social-icons.fa-github:hover {
   background-color: #111;
 }
 
-.social-icons i.fa-linkedin:hover {
+.social-icons.fa-linkedin:hover {
   background-color: #56b3d8;
 }
 
