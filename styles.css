@@ -22,6 +22,8 @@ body {
   --hero-grad1: #f5f7fa;
   --hero-grad2: #c3cfe2;
 
+  --project-bg: linear-gradient(135deg, #fff, #1b06dfb4);
+  --exp-bg: linear-gradient(45deg,#ffffff,#cacbe4);
   --contact-bg: linear-gradient(135deg, #fff, #e3f2fd);
 
   --btn-bg: #007bff;
@@ -46,10 +48,12 @@ body.dark-mode{
   --hero-grad1: #0d0d0e;
   --hero-grad2: #3a4e6e;
 
+  --project-bg: linear-gradient(135deg, #111, #0d0553b7);
+  --exp-bg: linear-gradient(45deg,#111,#4a4b57);
   --contact-bg: linear-gradient(135deg, #111, #2e4a5e);
 
-  /*--btn-bg: #043972;
-  --btn-bg-hover: #007bff;*/
+  --btn-bg: #e3f2fd;
+  --btn-bg-hover: #007bff;
 }
 
 /* Navbar */
@@ -262,7 +266,7 @@ body.dark-mode{
 
 /* Sección timeline */
 #experience {
-  background: linear-gradient(45deg,#ffffff,#120d2e);
+  background: var(--exp-bg);
   padding: 60px 20px;
   text-align: center;
 }
@@ -395,7 +399,7 @@ body.dark-mode{
 }
 
 .projects {
-  background: linear-gradient(135deg, #5f07d39d, #2313809a);
+  background: var(--project-bg);
 }
 
 .projects .card {
@@ -413,7 +417,7 @@ body.dark-mode{
 }
 
 .projects .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-20px);
 }
 
 .projects .card img {
@@ -545,7 +549,7 @@ a[href^="tel"] {
   background-color: #ffffff;
   text-decoration: none;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .social-icons:hover {
