@@ -16,6 +16,7 @@ body {
   --bg-color: #ffffff;
   --text-color: #111111;
   --nav-bg: #f0f0f0;
+  --navham-bg: #f0f0f0cc;
   --nav-text: #111111;
   --foot-bg: #f5f5f5;
 
@@ -53,6 +54,7 @@ body.dark-mode{
   --bg-color: #111111;
   --text-color: #ffffff;
   --nav-bg: #222222;
+  --navham-bg: #000000cc;
   --nav-text: #f0f0f0;
   --foot-bg: #241e1eee;
 
@@ -790,7 +792,7 @@ footer {
     position: absolute;
     top: 55px;
     left: -250px;
-    background: #000000cc;
+    background: var(--navham-bg);
     flex-direction: column;
     gap: 1rem;
     width: 200px;
