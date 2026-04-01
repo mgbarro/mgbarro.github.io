@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const reveals = document.querySelectorAll(".reveal");
 
   const options = {
-    threshold: 0.2
+    threshold: 0.1
   };
 
   const observer = new IntersectionObserver((entries) => {

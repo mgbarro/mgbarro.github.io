@@ -347,6 +347,8 @@ body.dark-mode .blob {
 
 .skill-card img {
   max-width: 50px;
+  height: 200%;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
@@ -785,16 +787,15 @@ footer {
 
   .nav-links {
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: -250px;
-    background: var(--bg-color);
+    background: #000000cc;
     flex-direction: column;
     gap: 1rem;
     width: 200px;
     padding: 1rem;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    display: none; /* oculto por defecto */
+    border: 1px solid #eeeeee59;
+    border-radius: 5px;
     transition: left 0.8s ease;
   }
 
