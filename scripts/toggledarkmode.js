@@ -1,4 +1,5 @@
 const toggleBtn = document.getElementById('toggle-theme');
+var darkicon = toggleBtn.getElementsByClassName("darkthemeicon")[0];
 
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
@@ -6,10 +7,10 @@ toggleBtn.addEventListener('click', () => {
   // Guardar preferencia en localStorage para que se mantenga al recargar
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
-    toggleBtn.classList.replace('fa-moon', 'fa-sun')
+    darkicon.classList.replace('fa-moon', 'fa-sun')
   } else {
     localStorage.setItem('theme', 'light');
-    toggleBtn.classList.replace('fa-sun', 'fa-moon')
+    darkicon.classList.replace('fa-sun', 'fa-moon')
   }
 });
 
