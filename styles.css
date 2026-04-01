@@ -397,6 +397,7 @@ body.dark-mode .blob {
   overflow: hidden;
   margin: 0 auto;   /* centra la card si hay espacio */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition-delay: 0.5s;
 }
 
 .projects .card:hover {
