@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const events = document.querySelectorAll(".timeline-event");
 
   const eventOptions = {
-    threshold: 0.2
+    threshold: 0.01
   };
 
   const eventObserver = new IntersectionObserver((entries, observer) => {
