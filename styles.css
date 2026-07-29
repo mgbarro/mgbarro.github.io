@@ -382,7 +382,7 @@ body.dark-mode .blob {
 }
 
 .projects {
-  background: var(--project-bg);
+  background: linear-gradient(135deg, var(--hero-grad1), var(--hero-grad2));
 }
 
 .projects .card {
@@ -448,7 +448,7 @@ body.dark-mode .blob {
 
 /* SECCIÓN TIMELINE */
 #experience {
-  background: var(--exp-bg);
+  background: linear-gradient(135deg, var(--hero-grad1), var(--hero-grad2));
   padding: 60px 20px;
   text-align: center;
 }
@@ -573,7 +573,7 @@ body.dark-mode .blob {
 /* SECCIÓN CONTACT */
 
 #contact {
-  background: var(--contact-bg);
+  background: linear-gradient(135deg, var(--hero-grad1), var(--hero-grad2));
   color: var(--text-color)
 }
 
