@@ -227,30 +227,43 @@
     <div class="container">
       <h2><i class="fa-solid fa-bell"></i> Contacto</h2>
 
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:+34698100103">+34 698 100 103</a>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+34698100103">+34 698 100 103</a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="contact-item-content">
+              <a href="mailto:maurogarciabarro@gmail.com">maurogarciabarro@gmail.com</a>
+              <button class="copy-email-btn" type="button" data-email="maurogarciabarro@gmail.com">
+                <i class="fa-regular fa-copy"></i> <span class="copy-email-label">Copiar</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>A Coruña, España</span>
+          </div>
         </div>
 
-        <div class="contact-item">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:maurogarciabarro@gmail.com">maurogarciabarro@gmail.com</a>
+        <div class="contact-grid">
+          <a href="mailto:maurogarciabarro@gmail.com" class="social-icon-wrap" aria-label="Enviar correo">
+            <span class="social-icons fa-solid fa-envelope fa-2xl"></span>
+            <span class="social-label">Email</span>
+          </a>
+          <a href="https://github.com/mgbarro" target="_blank" rel="noopener noreferrer" class="social-icon-wrap" aria-label="Perfil de GitHub">
+            <span class="social-icons fa-brands fa-github fa-2xl"></span>
+            <span class="social-label">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mauro-garc%C3%ADa-barro-b19274398/" target="_blank" rel="noopener noreferrer" class="social-icon-wrap" aria-label="Perfil de LinkedIn">
+            <span class="social-icons fa-brands fa-linkedin fa-2xl"></span>
+            <span class="social-label">LinkedIn</span>
+          </a>
         </div>
-
-        <div class="contact-item">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>A Coruña, España</span>
-        </div>
-      </div>
-
-      <div class="contact-grid">
-        <a href="mailto:maurogarciabarro@gmail.com" class="social-icons fa-solid fa-envelope fa-2xl" aria-label="Enviar correo">
-        </a>
-        <a href="https://github.com/mgbarro" target="_blank" rel="noopener noreferrer" class="social-icons fa-brands fa-github fa-2xl" aria-label="Perfil de GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/mauro-garc%C3%ADa-barro-b19274398/" target="_blank" rel="noopener noreferrer" class="social-icons fa-brands fa-linkedin fa-2xl" aria-label="Perfil de LinkedIn">
-        </a>
       </div>
     </div>
   </section>
@@ -259,11 +272,12 @@
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="current-year">2026</span> Mauro García Barro - Portfolio</p>
+    <p>© <span id="current-year">2025</span> Mauro García Barro - Portfolio</p>
   </footer>
 
   <script src="scripts/sectionhandler.js"></script>
   <script src="scripts/toggledarkmode.js"></script>
+  <script src="scripts/copyemail.js"></script>
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
