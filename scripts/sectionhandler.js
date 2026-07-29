@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     document.body.classList.add('dark-mode');
+
+    // Sincronizar el icono con el tema guardado (antes solo se
+    // actualizaba al hacer click, quedando desincronizado al recargar)
+    const toggleBtn = document.getElementById('toggle-theme');
+    const darkicon = toggleBtn?.getElementsByClassName("darkthemeicon")[0];
+    if (darkicon) {
+      darkicon.classList.replace('fa-moon', 'fa-sun');
+    }
   }
 
 
@@ -86,4 +94,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-

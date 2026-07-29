@@ -7,14 +7,13 @@ toggleBtn.addEventListener('click', () => {
   // Guardar preferencia en localStorage para que se mantenga al recargar
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
-    darkicon.classList.replace('fa-moon', 'fa-sun')
+    darkicon.classList.replace('fa-moon', 'fa-sun');
   } else {
     localStorage.setItem('theme', 'light');
-    darkicon.classList.replace('fa-sun', 'fa-moon')
+    darkicon.classList.replace('fa-sun', 'fa-moon');
   }
 });
 
-// Al cargar la página, aplicar el tema guardado
-document.addEventListener('DOMContentLoaded', () => {
- 
-});
+// Nota: la sincronización del icono al cargar la página (según el tema
+// guardado en localStorage) se realiza en sectionhandler.js, ya que es
+// ahí donde se lee y aplica la preferencia guardada al body.

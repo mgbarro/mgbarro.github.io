@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/8fadaac934.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Portfolio de Mauro García Barro, Ingeniero Informático especializado en Data Science, sistemas virtualizados y cloud.">
+  <script src="https://kit.fontawesome.com/8fadaac934.js" crossorigin="anonymous" defer></script>
   <title>Portfolio - Mauro García Barro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,9 +28,11 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button id="toggle-theme"><i class="darkthemeicon fa-solid fa-moon fa-flip-horizontal fa-xl"></i></button>
+      <button id="toggle-theme" aria-label="Cambiar tema claro/oscuro"><i class="darkthemeicon fa-solid fa-moon fa-flip-horizontal fa-xl"></i></button>
     </div>
   </header>
+
+  <main>
 
   <!-- Hero -->
   <section id="home" class="section hero reveal fade-in">
@@ -56,61 +59,61 @@
         Persigo la <span class="highlight">mejora continua</span> tanto a nivel técnico como interpersonal, y poder formar parte de proyectos que me permitan crecer
         y aprovechar al máximo dichos conocimientos.
       </p>
-      <a href="pdfs/MiCV.pdf" class="btn" target="_blank">Ver CV <i class="fa-solid fa-arrow-right fa-beat-fade"></i></a>
+      <a href="pdfs/MiCV.pdf" class="btn" target="_blank" rel="noopener noreferrer">Ver CV <i class="fa-solid fa-arrow-right fa-beat-fade"></i></a>
 
       <h2><i class="fa-regular fa-lightbulb"></i> Mis competencias</h2>
 
       <div class="skills-grid reveal slide-up">
         <div class="skill-card">
-          <img src="images/icons/pythonLogo.png">
+          <img src="images/icons/pythonLogo.png" alt="Python">
           <span><strong>Python</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/pandas_secondary.svg">
+          <img src="images/icons/pandas_secondary.svg" alt="pandas">
           <span><strong>pandas</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/vsphereLogo.png">
+          <img src="images/icons/vsphereLogo.png" alt="VMware vSphere">
           <span><strong>VMware vSphere</strong></span>
         </div>
         <div class="skill-card">
-          <a href="https://www.proxmox.com/en/"><img src="images/icons/Logo_Proxmox.svg.png"></a>
+          <a href="https://www.proxmox.com/en/" target="_blank" rel="noopener noreferrer"><img src="images/icons/Logo_Proxmox.svg.png" alt="Proxmox VE"></a>
           <span><strong>Proxmox VE</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/veeamLogo.png" href="https://www.veeam.com/es">
-          <span><strong>VMware vSphere</strong></span>
+          <a href="https://www.veeam.com/es" target="_blank" rel="noopener noreferrer"><img src="images/icons/veeamLogo.png" alt="Veeam"></a>
+          <span><strong>Veeam</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/dockerLogo.png">
+          <img src="images/icons/dockerLogo.png" alt="Docker">
           <span><strong>Docker</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/Slurm_logo.png">
+          <img src="images/icons/Slurm_logo.png" alt="Slurm">
           <span><strong>Slurm</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/awsLogo.png">
+          <img src="images/icons/awsLogo.png" alt="AWS">
           <span><strong>AWS</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/gitLogo.png">
+          <img src="images/icons/gitLogo.png" alt="Git">
           <span><strong>Git</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/htmlLogo.png">
+          <img src="images/icons/htmlLogo.png" alt="HTML5">
           <span><strong>HTML5</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/cssLogo.png">
+          <img src="images/icons/cssLogo.png" alt="CSS3">
           <span><strong>CSS3</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/jsLogo.png">
+          <img src="images/icons/jsLogo.png" alt="JavaScript">
           <span><strong>JavaScript</strong></span>
         </div>
         <div class="skill-card">
-          <img src="images/icons/androidStudioLogo.png">
+          <img src="images/icons/androidStudioLogo.png" alt="Android Studio">
           <span><strong>Android Studio</strong></span>
         </div>
       </div>
@@ -132,8 +135,8 @@
             de Machine Learning a la hora de predecir el comportamiento de diferentes comentarios en la red social Vine.
           </p>
           <div class="card-links">
-            <a href="pdfs/TFG.pdf" target="_blank" download="TFGMauroGarcíaBarro.pdf"><i class="fa-solid fa-file-pdf"></i> Descargar PDF</a>
-            <a href="https://github.com/mgbarro/tfg-machinelearning" target="_blank">Ver Código <i class="fa-solid fa-laptop-code"></i></a>
+            <a href="pdfs/TFG.pdf" target="_blank" rel="noopener noreferrer" download="TFGMauroGarcíaBarro.pdf"><i class="fa-solid fa-file-pdf"></i> Descargar PDF</a>
+            <a href="https://github.com/mgbarro/tfg-machinelearning" target="_blank" rel="noopener noreferrer">Ver Código <i class="fa-solid fa-laptop-code"></i></a>
           </div>
         </div>
 
@@ -146,7 +149,7 @@
             la plataforma de virtualización utilizada frente a otras alternativas del sector.
           </p>
           <div class="card-links">
-            <a href="pdfs/TFM.pdf" target="_blank" download="TFMMauroGarcíaBarro.pdf"><i class="fa-solid fa-file-pdf"></i> Descargar PDF</a>
+            <a href="pdfs/TFM.pdf" target="_blank" rel="noopener noreferrer" download="TFMMauroGarcíaBarro.pdf"><i class="fa-solid fa-file-pdf"></i> Descargar PDF</a>
           </div>
         </div>
       </div>
@@ -154,64 +157,66 @@
   </section>
 
   <section id="experience" class="section experience reveal slide-left">
-    <h2><i class="fa-solid fa-briefcase"></i> Formación y Experiencia</h2>
-    <div class="timeline-horizontal">
+    <div class="container">
+      <h2><i class="fa-solid fa-briefcase"></i> Formación y Experiencia</h2>
+      <div class="timeline-horizontal">
 
-      <div class="timeline-event reveal zoom-in">
-        <div class="timeline-icon">
-          <i class="fa-solid fa-graduation-cap"></i>
+        <div class="timeline-event reveal zoom-in">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Universidade da Coruña</h3>
+            <h4>Grado en Ingeniería Informática</h4>
+            <span>Sept. 2019 - Jun. 2023</span>
+          </div>
         </div>
-        <div class="timeline-content">
-          <h3>Universidade da Coruña</h3>
-          <h4>Grado en Ingeniería Informática</h4>
-          <span>Sept. 2019 - Jun. 2023</span>
+
+        <div class="timeline-event reveal zoom-in">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Universidade da Coruña</h3>
+            <h4>Máster Universitario en Ingeniería Informática</h4>
+            <span>Sept. 2023 - Jun. 2025</span>
+          </div>
         </div>
+
+        <div class="timeline-event reveal zoom-in">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Amazon Web Services</h3>
+            <h4>Certificado AWS Cloud Practitioner</h4>
+            <span>Dic. 2023</span>
+          </div>
+        </div>
+
+        <div class="timeline-event reveal zoom-in">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>CITIC</h3>
+            <h4>Prácticas de Técnico de Sistemas</h4>
+            <span>Sept. 2024 - Feb. 2025</span>
+          </div>
+        </div>
+
+        <div class="timeline-event reveal zoom-in">
+          <div class="timeline-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>ALTIA Consultores S.L.</h3>
+            <h4>Técnico de sistemas</h4>
+            <span>Feb. 2026 - </span>
+          </div>
+        </div>
+
       </div>
-
-      <div class="timeline-event reveal zoom-in">
-        <div class="timeline-icon">
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div class="timeline-content">
-          <h3>Universidade da Coruña</h3>
-          <h4>Máster Universitario en Ingeniería Informática</h4>
-          <span>Sept. 2023 - Jun. 2025</span>
-        </div>
-      </div>
-
-      <div class="timeline-event reveal zoom-in">
-        <div class="timeline-icon">
-          <i class="fa-solid fa-person-chalkboard"></i>
-        </div>
-        <div class="timeline-content">
-          <h3>Amazon Web Services</h3>
-          <h4>Certificado AWS Cloud Practitioner</h4>
-          <span>Dic. 2023</span>
-        </div>
-      </div>
-
-      <div class="timeline-event reveal zoom-in">
-        <div class="timeline-icon">
-          <i class="fa-solid fa-briefcase"></i>
-        </div>
-        <div class="timeline-content citicicon">
-          <h3>CITIC</h3>
-          <h4>Prácticas de Técnico de Sistemas</h4>
-          <span>Sept. 2024 - Feb. 2025</span>
-        </div>
-      </div>
-
-      <div class="timeline-event reveal zoom-in">
-        <div class="timeline-icon">
-          <i class="fa-solid fa-briefcase"></i>
-        </div>
-        <div class="timeline-content altiaicon">
-          <h3>ALTIA Consultores S.L.</h3>
-          <h4>Técnico de sistemas</h4>
-          <span>Feb. 2026 - </span>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -219,46 +224,49 @@
 
   <!-- Contact -->
   <section id="contact" class="section contact reveal fade-in">
-  <div class="container">
-    <h2><i class="fa-solid fa-bell"></i> Contacto</h2>
+    <div class="container">
+      <h2><i class="fa-solid fa-bell"></i> Contacto</h2>
 
-    <div class="contact-info">
-      <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:+34698100103">+34 698 100 103</a>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+34698100103">+34 698 100 103</a>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:maurogarciabarro@gmail.com">maurogarciabarro@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>A Coruña, España</span>
+        </div>
       </div>
 
-      <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:maurogarciabarro@gmail.com">maurogarciabarro@gmail.com</a>
-      </div>
-
-      <div class="contact-item">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>A Coruña, España</span>
+      <div class="contact-grid">
+        <a href="mailto:maurogarciabarro@gmail.com" class="social-icons fa-solid fa-envelope fa-2xl" aria-label="Enviar correo">
+        </a>
+        <a href="https://github.com/mgbarro" target="_blank" rel="noopener noreferrer" class="social-icons fa-brands fa-github fa-2xl" aria-label="Perfil de GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/mauro-garc%C3%ADa-barro-b19274398/" target="_blank" rel="noopener noreferrer" class="social-icons fa-brands fa-linkedin fa-2xl" aria-label="Perfil de LinkedIn">
+        </a>
       </div>
     </div>
+  </section>
 
-    <div class="contact-grid">
-      <a href="mailto:maurogarciabarro@gmail.com" class="social-icons fa-solid fa-envelope fa-2xl">
-      </a>
-      <a href="https://github.com/mgbarro" target="_blank" class="social-icons fa-brands fa-github fa-2xl">
-      </a>
-      <a href="https://www.linkedin.com/in/mauro-garc%C3%ADa-barro-b19274398/" target="_blank" class="social-icons fa-brands fa-linkedin fa-2xl">
-      </a>
-    </div>
-  </div>
-</section>
-
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Mauro García Barro - Portfolio</p>
+    <p>© <span id="current-year">2026</span> Mauro García Barro - Portfolio</p>
   </footer>
 
   <script src="scripts/sectionhandler.js"></script>
   <script src="scripts/toggledarkmode.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
-
