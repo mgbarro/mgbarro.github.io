@@ -447,6 +447,7 @@ body.dark-mode .blob {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
+  text-align: center;
 }
 
 .skill-card:hover {
@@ -956,6 +957,18 @@ footer {
     width: 150px;
     height: 150px;
   }
+
+  .skill-card {
+  background: #8d8c8c93;
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
 
   .timeline-horizontal {
     gap: 20px;
