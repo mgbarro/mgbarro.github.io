@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  // Navbar: sombra al hacer scroll (da sensación de que "flota" sobre el contenido)
+  const navbar = document.querySelector(".navbar");
+  const updateNavbarShadow = () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 10);
+  };
+  updateNavbarShadow();
+  window.addEventListener("scroll", updateNavbarShadow, { passive: true });
+
+
   // Hamburger Menu
   const hamburger = document.querySelector(".hamburger");
   const navLinksMenu = document.querySelector(".nav-links");
