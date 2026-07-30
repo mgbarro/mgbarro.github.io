@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--tlinespancolor);
+  color: var(--text-muted);
 }
 
 html {
@@ -70,11 +70,7 @@ body {
   --btn-bg: var(--accent);
   --btn-bg-hover: var(--accent-2);
 
-  --tlineheader: #0e7c7b;
-  --tlinetextcolor: #0a5a59;
-  --tlinecardbg: #d9f0ee;
-  --tlinetracecolor: #0e7c7b;
-  --tlinespancolor: #3b3b3b;
+  --text-muted: #5f5e5a;
 
   --contactcard-bg: #6f8db30d;
   --socialicon-bg: #cfe8e6b0;
@@ -110,11 +106,7 @@ body.dark-mode{
   --btn-bg: #e3f2fd;
   --btn-bg-hover: #14a3a1;
 
-  --tlineheader: #8eb2cc;
-  --tlinetextcolor: #5c7bab;
-  --tlinecardbg: #e3f2fd;
-  --tlinetracecolor: #788ba1;
-  --tlinespancolor: #000000;
+  --text-muted: #b5b3ab;
 
   --contactcard-bg: #6c7d9026;
   --socialicon-bg: #8cb0ca4d;
@@ -540,46 +532,42 @@ body.dark-mode .blob {
 /* SECCIÓN TIMELINE */
 #experience {
   background: linear-gradient(135deg, var(--hero-grad1), var(--hero-grad2));
-  padding: 60px 20px;
-  text-align: center;
 }
 
-#experience h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
-  color: var(--tlineheader);
+#experience .container {
+  max-width: 1200px;
 }
-
 
 .timeline-horizontal {
   display: flex;
-  gap: 40px;
+  gap: 56px;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
   max-width: 100%;
-  overflow-x: auto; /* scroll si hay muchos */
-  padding: 20px 0;
+  overflow-x: auto; /* scroll si hay muchos y no caben */
+  padding: 20px 4px 28px;
   scrollbar-width: thin;
-  scrollbar-color: var(--tlinetextcolor) var(--tlinecardbg);
+  scrollbar-color: var(--accent) var(--nav-bg);
 }
 
 
 .timeline-horizontal::before {
   content: '';
   position: absolute;
-  top: 60px; /* línea pasa por los iconos */
+  top: 45px; /* línea pasa por el centro de los iconos */
   left: 0;
-  width: 150%;
-  height: 4px;
-  background: var(--tlinetracecolor);
+  width: 100%;
+  height: 3px;
+  background: var(--accent);
+  opacity: 0.35;
   z-index: 0;
 }
 
 
 .timeline-event {
   position: relative;
-  min-width: 220px;
+  min-width: 240px;
   flex-shrink: 0;
   text-align: center;
   z-index: 1;
@@ -612,7 +600,7 @@ body.dark-mode .blob {
 .timeline-icon {
   width: 50px;
   height: 50px;
-  background: var(--tlinetextcolor);
+  background: var(--accent);
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -622,19 +610,13 @@ body.dark-mode .blob {
   font-size: 20px;
   z-index: 2;
   position: relative;
-  /*border: 3px solid var(--tlinecardbg);*/
 }
-
-  /*background-image: url("images/profile.jpg");
-  #background-repeat: no-repeat;
-  #background-position: center;
-  #background-size: contain;
-  #background-size: cover;*/
 
 
 .timeline-content {
-  background: var(--tlinecardbg);
-  padding: 15px;
+  background: var(--nav-bg);
+  border: 1px solid var(--card-border);
+  padding: 18px 20px;
 }
 
 .timeline-content:hover {
@@ -643,20 +625,23 @@ body.dark-mode .blob {
 
 .timeline-content h3 {
   margin: 0;
-  font-size: 1.2rem;
-  color: var(--tlinetextcolor);
+  font-size: 1.15rem;
+  color: var(--text-color);
 }
 
 .timeline-content h4 {
-  margin: 5px 0;
-  font-size: 1rem;
-  /*color: #1565c0;*/
-  color: var(--tlinetextcolor)
+  margin: 6px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
 }
 
 .timeline-content span {
-  font-size: 0.9rem;
-  color: var(--tlinespancolor);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 
@@ -698,7 +683,7 @@ body.dark-mode .blob {
   justify-content: left;
   gap: 16px;
   font-size: 1.5rem;
-  color: var(--tlinetextcolor);
+  color: var(--text-color);
   padding: 18px 20px;
 }
 
@@ -721,7 +706,7 @@ body.dark-mode .blob {
 
 .contact-item a {
   text-decoration: none;
-  color: var(--tlineheader);
+  color: var(--accent);
 }
 
 .contact-item-content {
