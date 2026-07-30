@@ -716,7 +716,7 @@ body.dark-mode .blob {
 }
 
 .contact-item-content {
-  display: flex;
+  display: inline;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
@@ -730,8 +730,6 @@ body.dark-mode .blob {
   font-family: var(--font-body);
   color: var(--text-color);
   background: transparent;
-  border: 1px solid var(--card-border);
-  border-radius: 20px;
   padding: 4px 12px;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
