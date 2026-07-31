@@ -683,6 +683,14 @@ body.dark-mode .blob {
   font-weight: 600;
   font-size: 1rem;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag-icon {
+  font-size: 1.15em;
+  line-height: 1;
 }
 
 .language-level {
@@ -775,7 +783,6 @@ body.dark-mode .blob {
 .contact-item-content {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
