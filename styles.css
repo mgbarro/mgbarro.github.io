@@ -649,6 +649,64 @@ body.dark-mode .blob {
   color: var(--text-muted);
 }
 
+.languages {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.languages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.language-card {
+  background: var(--nav-bg);
+  border: 1px solid var(--card-border);
+  padding: 16px 20px;
+  flex: 1 1 200px;
+  max-width: 240px;
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.language-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.language-level {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.language-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--card-border);
+  overflow: hidden;
+}
+
+.language-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
 
 /* SECCIÓN CONTACT */
 
@@ -715,8 +773,9 @@ body.dark-mode .blob {
 }
 
 .contact-item-content {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
