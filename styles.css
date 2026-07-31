@@ -434,7 +434,7 @@ body.dark-mode .blob {
   max-width: 50px;
   height: 200%;
   object-fit: contain;
-  margin:auto;
+  margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -447,7 +447,6 @@ body.dark-mode .blob {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  text-align: center;
 }
 
 .skill-card:hover {
@@ -540,10 +539,6 @@ body.dark-mode .blob {
 }
 
 .timeline-horizontal {
-  display: flex;
-  gap: 56px;
-  justify-content: flex-start;
-  align-items: flex-start;
   position: relative;
   max-width: 100%;
   overflow-x: auto; /* scroll si hay muchos y no caben */
@@ -552,8 +547,17 @@ body.dark-mode .blob {
   scrollbar-color: var(--accent) var(--nav-bg);
 }
 
+.timeline-track {
+  display: flex;
+  gap: 56px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: max-content; /* se ajusta al contenido real, incluido lo que queda fuera de la vista */
+}
 
-.timeline-horizontal::before {
+
+.timeline-track::before {
   content: '';
   position: absolute;
   top: 45px; /* línea pasa por el centro de los iconos */
@@ -705,45 +709,45 @@ body.dark-mode .blob {
   font-size: 1.1rem;
 }
 
-.contact-item i .fa-copy{
-  background: transparent;
-  color: var(--text-color);
-}
-
 .contact-item a {
   text-decoration: none;
   color: var(--accent);
 }
 
 .contact-item-content {
-  display: inline;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
+}
+
+.contact-item-content a {
+  font-size: 1rem;
 }
 
 .copy-email-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
   font-size: 0.85rem;
+  font-weight: 500;
   font-family: var(--font-body);
-  color: var(--text-color);
-  background: transparent;
-  padding: 4px 12px;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 4px 6px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .copy-email-btn:hover {
-  background: var(--btn-bg);
-  color: var(--bg-color);
+  color: var(--accent-2);
 }
 
 .copy-email-btn.copied {
-  background: #2e7d32;
-  color: #fff;
-  border-color: #2e7d32;
+  color: #2e7d32;
 }
 
 a[href^="tel"] {
@@ -961,19 +965,7 @@ footer {
     height: 150px;
   }
 
-  .skill-card {
-  background: #8d8c8c93;
-  padding: 20px;
-  width: 150px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-
-  .timeline-horizontal {
+  .timeline-track {
     gap: 20px;
   }
   .timeline-event {
@@ -1042,14 +1034,18 @@ footer {
   }
 
   .timeline-horizontal {
+    overflow-x: visible; /* quitar scroll horizontal */
+  }
+
+  .timeline-track {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 30px;
     padding-left: 30px;
-    overflow-x: visible; /* quitar scroll horizontal */
+    width: auto;
   }
 
-  .timeline-horizontal::before {
+  .timeline-track::before {
     top: 0;
     left: 25px; /* la línea queda alineada con los iconos */
     width: 4px;
