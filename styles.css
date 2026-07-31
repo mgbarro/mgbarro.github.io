@@ -715,9 +715,8 @@ body.dark-mode .blob {
 }
 
 .contact-item-content {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
