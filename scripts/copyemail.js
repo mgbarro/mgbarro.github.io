@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!copyBtn) return;
 
   const label = copyBtn.querySelector(".copy-email-label");
-  const defaultText = label.textContent;
 
   copyBtn.addEventListener("click", async () => {
     const email = copyBtn.dataset.email;
+
+    // window.i18n lo expone scripts/i18n.js; si por lo que sea no está
+    // cargado, se recurre al texto que ya hay en el botón como fallback.
+    const defaultText = window.i18n ? window.i18n.t("contact.copy") : label.textContent;
+    const copiedText = window.i18n ? window.i18n.t("contact.copied") : "¡Copiado!";
 
     try {
       await navigator.clipboard.writeText(email);
@@ -20,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.removeChild(tempInput);
     }
 
-    label.textContent = "¡Copiado!";
+    label.textContent = copiedText;
     copyBtn.classList.add("copied");
 
     setTimeout(() => {
