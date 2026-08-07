@@ -59,6 +59,8 @@ body {
   --nav-text: #111111;
   --foot-bg: #f5f5f5;
 
+  --shine-color: rgba(0, 0, 0, 0.5);
+
   --card-border: rgba(0, 0, 0, 0.4);
 
   --hero-grad1: #f5f7fa;
@@ -97,6 +99,8 @@ body.dark-mode{
   --navham-bg: #000000cc;
   --nav-text: #f0f0f0;
   --foot-bg: #241e1eee;
+
+  --shine-color: rgba(255, 255, 255, 0.9);
 
   --card-border: rgb(146 146 146 / 40%);
 
@@ -381,7 +385,7 @@ body.dark-mode .blob {
     90deg,
     var(--text-color) 0%,
     var(--text-color) 40%,
-    #ffffff 50%,
+    var(--shine-color) 50%,
     var(--text-color) 60%,
     var(--text-color) 100%
   );
@@ -390,7 +394,7 @@ body.dark-mode .blob {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: shine 4s ease-in-out infinite;
+  animation: shine 5s linear infinite;
 }
 
 @keyframes shine {
