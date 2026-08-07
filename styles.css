@@ -103,6 +103,10 @@ body.dark-mode{
   --hero-grad1: #0d0d0e;
   --hero-grad2: #3a4e6e;
 
+  /* Nuevo: paleta más vívida en oscuro */
+  --accent: #2de2c8;
+  --accent-2: #ff5b8c;
+
   --btn-bg: #e3f2fd;
   --btn-bg-hover: #14a3a1;
 
@@ -176,6 +180,7 @@ body.dark-mode{
 
 .logo {
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -435,7 +440,8 @@ body.dark-mode .blob {
 }
 
 .skill-card {
-  background: #8d8c8c93;
+  background: var(--nav-bg);
+  border: 1px solid var(--card-border);
   padding: 20px;
   width: 200px;
   height: 120px;
@@ -448,7 +454,7 @@ body.dark-mode .blob {
 
 .skill-card i {
   font-size: 50px;
-  color: white;
+  color: var(--text-color);
 }
 
 .skill-card img {
@@ -467,7 +473,7 @@ body.dark-mode .blob {
   margin-top: auto;
   font-size: 0.9rem;
   font-weight: 500;
-  color: white;
+  color: var(--text-color);
 }
 
 .skill-card:hover {
