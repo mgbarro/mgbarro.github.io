@@ -835,19 +835,6 @@ body.dark-mode .blob {
   transform: translateX(8px);
 }
 
-.contact-item i {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--btn-bg);
-  color: var(--bg-color);
-  font-size: 1.1rem;
-}
-
 .contact-item a {
   text-decoration: none;
   color: var(--accent);
@@ -906,7 +893,6 @@ body.dark-mode .blob {
 .copy-icon-default,
 .copy-icon-success {
   position: absolute;
-  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
