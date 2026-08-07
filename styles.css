@@ -376,6 +376,35 @@ body.dark-mode .blob {
     }
 }
 
+.shine-text {
+  background: linear-gradient(
+    90deg,
+    var(--text-color) 0%,
+    var(--text-color) 40%,
+    #ffffff 50%,
+    var(--text-color) 60%,
+    var(--text-color) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  50% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
 .hero .container {
     position: relative;
     z-index: 1;
@@ -883,6 +912,46 @@ body.dark-mode .blob {
 .copy-email-btn.copied .copy-email-label {
   opacity: 1;
   transform: translate(0, -50%) scale(1);
+}
+
+.copy-icon-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+}
+
+.copy-icon-default,
+.copy-icon-success {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.copy-icon-default {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.copy-icon-success {
+  opacity: 0;
+  transform: scale(0.5) rotate(-45deg);
+  color: #2e7d32;
+}
+
+.copy-email-btn.copied .copy-icon-default {
+  opacity: 0;
+  transform: scale(0.5) rotate(45deg);
+}
+
+.copy-email-btn.copied .copy-icon-success {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
 }
 
 a[href^="tel"] {
