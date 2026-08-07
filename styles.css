@@ -176,6 +176,7 @@ body.dark-mode{
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+  white-space: nowrap;
 }
 
 .logo {
@@ -837,7 +838,7 @@ body.dark-mode .blob {
 }
 
 .copy-email-btn.copied {
-  color: #2e7d32;
+  color: var(--accent-2);
 }
 
 /* Icono solo por defecto: el texto "Copiar"/"¡Copiado!" queda oculto */
