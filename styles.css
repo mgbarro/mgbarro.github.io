@@ -100,7 +100,7 @@ body.dark-mode{
   --nav-text: #f0f0f0;
   --foot-bg: #241e1eee;
 
-  --shine-color: rgba(255, 255, 255, 0.9);
+  --shine-color: rgba(101, 95, 97, 0.9);
 
   --card-border: rgb(146 146 146 / 40%);
 
@@ -394,18 +394,29 @@ body.dark-mode .blob {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite;
+  animation:
+    shine-sweep 5s linear infinite,
+    shine-idle-pulse 2.4s ease-in-out infinite;
 }
 
-@keyframes shine {
+@keyframes shine-sweep {
   0% {
     background-position: 200% center;
   }
-  50% {
+  15% {
     background-position: -200% center;
   }
   100% {
     background-position: -200% center;
+  }
+}
+
+@keyframes shine-idle-pulse {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.15);
   }
 }
 
