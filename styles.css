@@ -64,8 +64,8 @@ body {
   --hero-grad1: #f5f7fa;
   --hero-grad2: #c3cfe2;
 
-  --accent: #0e7c7b;
-  --accent-2: #e2723a;
+  --accent: #0e4e7c;
+  --accent-2: #75b6c5;
 
   --btn-bg: var(--accent);
   --btn-bg-hover: var(--accent-2);
