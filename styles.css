@@ -842,27 +842,46 @@ body.dark-mode .blob {
 
 /* Icono solo por defecto: el texto "Copiar"/"¡Copiado!" queda oculto */
 .copy-email-label {
-  display: none;
-}
-
-/* Al copiar, se muestra el texto como un pequeño tooltip flotante,
-   posicionado de forma absoluta para que NO empuje ni agrande la tarjeta */
-.copy-email-btn.copied .copy-email-label {
   display: inline-block;
   position: absolute;
   left: 100%;
   top: 50%;
-  transform: translateY(-50%);
-  margin-left: 8px;
+  margin-left: 14px;
   white-space: nowrap;
   font-size: 0.8rem;
   font-weight: 500;
   background: var(--nav-bg);
   border: 1px solid var(--card-border);
-  padding: 3px 8px;
-  border-radius: 6px;
-  box-shadow: var(--shadow-1);
+  padding: 4px 10px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
   pointer-events: none;
+
+  /* Estado oculto: ligeramente encogido, desplazado y transparente */
+  opacity: 0;
+  transform: translate(-6px, -50%) scale(0.9);
+  transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Pequeña flecha apuntando al botón, para que se lea como un popup real */
+.copy-email-label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--nav-bg);
+  border-left: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  rotate: 45deg;
+}
+
+.copy-email-btn.copied .copy-email-label {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
 }
 
 a[href^="tel"] {
