@@ -828,6 +828,7 @@ body.dark-mode .blob {
   font-size: 1.5rem;
   color: var(--text-color);
   padding: 18px 20px;
+  overflow: hidden; /* evita que nada se salga del borde redondeado */
 }
 
 .contact-item:hover {
@@ -856,28 +857,40 @@ body.dark-mode .blob {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0; /* permite que el email largo se trunque si hace falta */
+  flex: 1;
 }
 
 .contact-item-content a {
   font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .copy-email-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
   flex-shrink: 0;
-  white-space: nowrap;
-  font-size: 0.85rem;
-  font-weight: 500;
-  font-family: var(--font-body);
+  width: 32px;
+  height: 32px;
+  font-size: 0.95rem;
   color: var(--accent);
   background: none;
   border: none;
-  padding: 4px 6px;
+  border-radius: 50%;
+  padding: 0;
   cursor: pointer;
-  transition: color 0.3s ease, opacity 0.3s ease;
-  line-height: 1;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.copy-email-btn:hover {
+  background: var(--card-border);
+}
+
+.copy-email-btn.copied {
+  color: #2e7d32;
 }
 
 .copy-icon-wrap {
@@ -887,8 +900,7 @@ body.dark-mode .blob {
   justify-content: center;
   width: 1em;
   height: 1em;
-  font-size: 1rem;
-  flex-shrink: 0;
+  line-height: 1;
 }
 
 .copy-icon-default,
@@ -920,10 +932,6 @@ body.dark-mode .blob {
 .copy-email-btn.copied .copy-icon-success {
   opacity: 1;
   transform: scale(1) rotate(0deg);
-}
-
-.copy-email-btn.copied {
-  color: #2e7d32;
 }
 
 a[href^="tel"] {
