@@ -56,7 +56,6 @@ const translations = {
 
     "contact.title": "Contacto",
     "contact.copy": "Copiar",
-    "contact.copied": "¡Copiado!",
     "contact.location": "A Coruña, España"
   },
 
@@ -113,7 +112,6 @@ const translations = {
 
     "contact.title": "Contact",
     "contact.copy": "Copy",
-    "contact.copied": "Copied!",
     "contact.location": "A Coruña, Spain"
   }
 };
